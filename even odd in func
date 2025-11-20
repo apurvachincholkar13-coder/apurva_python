@@ -1,0 +1,10 @@
+n=int(input("Enter a number: "))
+def even():
+    if(n%2==0):
+       print("Even",n)
+    else:
+       print("odd",n)
+
+
+even()
+      
