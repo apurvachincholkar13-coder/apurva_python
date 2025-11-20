@@ -1,0 +1,9 @@
+def square():
+    n=int(input("Enter a numbers: "))
+    print("Square is: ",n*n)
+    print("Cube is: ",n*n*n)
+
+
+    
+
+square()
