@@ -1,0 +1,8 @@
+n=str(input("Enter a letter: "))
+def vowel():
+    if n in ("a","e","i","o","u"):
+        print("vowel")
+    else:
+        print("consonant")
+
+vowel()
