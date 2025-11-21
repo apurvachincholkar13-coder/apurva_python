@@ -3,6 +3,11 @@ w=int(input("Enter the width of the rectangle: "))
 def area():
     return l*w
 
+def perimeter():
+    return 2*(l+w)
+
 print("Area of the rectangle: ", area())
+print("Perimeter of rectangle: ",perimeter())
 
 area()
+perimeter()
