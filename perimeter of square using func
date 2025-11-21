@@ -1,0 +1,7 @@
+n=int (input("Enter side of square: "))
+def perimeter(n):
+    return 4*n
+
+print("perimeter of square: ",perimeter(n))
+
+perimeter(
