@@ -1,0 +1,21 @@
+students = {}
+def add_students(student_id,name,age,grades):
+    students[student_id]={
+        "name" : name,
+        "age" : age,
+        "grades" : grades,
+    }
+    
+def display_students():
+    for student_id,details in students.items():
+        print(f"Students ID :  {student_id}")
+        print(f"Name: {details['name']}")
+        print(f"Age: {details['age']}")
+        print(f"Grades:{details['grades']}")
+        print()
+        
+        
+add_students(403,"Mohini",20,[55,53,76])
+add_students(402,"Neeti",40,[43,25,55])
+        
+display_students()
