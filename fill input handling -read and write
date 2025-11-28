@@ -1,0 +1,5 @@
+f =open ("f.txt","r")
+print(f.read())
+f=open("f.txt","w")
+print(f.write("happy birthday"))
+f.close()
