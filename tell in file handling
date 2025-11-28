@@ -1,0 +1,4 @@
+f=open("sec.txt","r")
+print(f.read())
+print(f.tell())
+f.close()
