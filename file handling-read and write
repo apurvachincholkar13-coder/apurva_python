@@ -1,0 +1,9 @@
+f =open ("f.txt","r+")
+print(f.read())
+print(f.write("coding"))
+f.close()
+
+f=open("f.txt","w+")
+print(f.write())
+print(f.read("program"))
+f.close()
