@@ -1,0 +1,4 @@
+f=open("sec.txt","w+")
+print(f.write("i am happy"))
+print(f.seek(4))
+print(f.read())
