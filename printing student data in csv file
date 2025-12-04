@@ -1,0 +1,14 @@
+import csv
+with open("students.csv","w",newline="")as f:
+    writer = csv.writer(f)
+    writer.writerow(["Name","Marks"])
+
+    writer.writerow(["neha",96])
+    writer.writerow(["neeti",90])
+    writer.writerow(["tina",85])
+print("Data written to students.csv successfully!")
+import csv
+with open("students.csv","r")as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
