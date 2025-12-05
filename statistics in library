@@ -1,0 +1,12 @@
+import statistics
+
+a={3,5,7,9,3,5,7,9}
+
+mean=(statistics.mean(a))
+median=(statistics.median(a))
+mode=(statistics.mode(a))
+
+print("mean",mean)
+print("median",median)
+print("mode",mode)
+
