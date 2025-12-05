@@ -1,0 +1,22 @@
+import statistics
+import matplotlib.pyplot as plt
+from collections import Counter
+
+a=[1,3,3,4,3,4,5,2]
+
+mean=statistics.mean(a)
+median=statistics.median(a)
+mode=statistics.mode(a)
+
+print("Mean:",mean)
+print("Median:",median)
+print("Mode:",mode)
+
+freq= Counter(a)
+x= list(freq.keys())
+y= list(freq.values())
+
+plt.bar(x,y)
+plt.xlabel("Number")
+plt.ylabel("Frequency")
+plt.show()
