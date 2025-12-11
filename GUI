@@ -1,0 +1,13 @@
+import tkinter as tk
+root =tk.Tk()
+root.title("My first GUI")
+root.geometry("500x200")
+
+label=tk.LabelFrame(root,text="Welcome to Tkinter")
+label.pack()
+
+button=tk.Button(label,text="Click me")
+button.pack()
+
+
+root.mainloop()
