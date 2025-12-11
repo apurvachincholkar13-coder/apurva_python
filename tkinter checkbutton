@@ -1,0 +1,15 @@
+import tkinter as tk
+root =tk.Tk()
+root.title("Check Button Example")
+root.geometry("200x200")
+agree=tk.IntVar()
+tk.Checkbutton(root,text="I accept the terms",variable=agree).pack()
+
+def show():
+    print("Accepted:",agree.get())
+
+tk.Button(root,text="Submit",command=show).pack()
+
+
+
+root.mainloop()
