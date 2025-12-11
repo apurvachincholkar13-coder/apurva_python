@@ -1,0 +1,19 @@
+import tkinter as tk
+root =tk.Tk()
+root.title("RadioButton Example")
+root.geometry("200x200")
+gender=tk.stringVar()
+tk.Radiobutton(root,text="Male",variable=gender,value="Male").pack()
+tk.Radiobutton(root,text="Female",variable=gender,value="Female").pack()
+tk.Radiobutton(root,text="Other",variable=gender,value="Other").pack()
+def show():
+    selected=gender.get()
+    if selected =="":
+       print("Please select a gender")
+    else:
+        print("Selected:", selected)
+tk.Button(root,text="Submit",command=show).pack()
+
+
+
+root.mainloop()
