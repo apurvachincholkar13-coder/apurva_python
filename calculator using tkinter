@@ -1,0 +1,28 @@
+tk.Label(root,text="Number 2").pack()
+e2=tk.Entry()
+e2.pack()
+def add_numbers():
+    n1 = int(e1.get())
+    n2 = int(e2.get())
+    messagebox.showinfo("Result", f"sum={n1 + n2}")
+
+
+def sub_numbers():
+    n1=int(e1.get())
+    n2=int(e2.get())
+    messagebox.showinfo("Result", f"Subtraction={n1 - n2}")
+def mult_numbers():
+    n1 = int(e1.get())
+    n2 = int(e2.get())
+    messagebox.showinfo("Result", f"Product={n1 * n2}")
+def divi_numbers():
+    n1=int(e1.get())
+    n2=int(e2.get())
+    messagebox.showinfo("Result", f"Division={n1 / n2}")
+
+
+tk.Button(root,text="Addition",command=add_numbers).pack()
+tk.Button(root,text="Subtraction",command=sub_numbers).pack()
+tk.Button(root,text="Multiplicatin",command=mult_numbers).pack()
+tk.Button(root,text="Division",command=divi_numbers).pack()
+root.mainloop()
