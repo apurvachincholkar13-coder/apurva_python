@@ -1,0 +1,17 @@
+import tkinter as tk
+root=tk.Tk()
+root.title("Listbox Example")
+
+lb=tk.Listbox(root)
+lb.pack()
+items=["python","C","java"]
+for item in items:
+    lb.insert("end",item)
+
+def slowly():
+    selected=lb.get(lb.curselection())
+    print("Selected",selected)
+
+tk.Button(root,text="Show Selection",command=slowly).pack()
+
+root.mainloop()
