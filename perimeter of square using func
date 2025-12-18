@@ -4,4 +4,4 @@ def perimeter(n):
 
 print("perimeter of square: ",perimeter(n))
 
-perimeter(
+perimeter()
