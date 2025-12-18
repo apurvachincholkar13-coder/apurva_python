@@ -1,5 +1,5 @@
 n=int (input("Enter side of square: "))
-def area(r):
+def area(n):
     return n*n
 
 print("Area of square: ",area(n))
